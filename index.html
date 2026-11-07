@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Website</title>
+
+  <style>
+    body {
+      background: #e8f1ff;
+      font-family: sans-serif;
+      text-align: center;
+      padding: 40px 15px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      max-width: 350px;
+      margin: auto;
+    }
+
+    button {
+      background: blue;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1>မင်္ဂလာပါ</h1>
+    <p>ဒါက ကျွန်တော့်ရဲ့ ပထမဆုံး Website ပါ။</p>
+
+    <button onclick="hello()">နှိပ်ကြည့်ပါ</button>
+    <p id="result"></p>
+  </div>
+
+  <script>
+    function hello() {
+      document.getElementById("result").innerText =
+        "Website မှ ကြိုဆိုပါတယ်။";
+    }
+  </script>
+</body>
+</html>
